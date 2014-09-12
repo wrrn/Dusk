@@ -1,0 +1,41 @@
+body {
+    font-family: "Georgia",Georgia,Times,serif;
+    line-height: 1.5;
+    text-rendering: optimizelegibility;
+}
+.sidebar {
+    background: #F3615F;
+    color: #FAFAF9;    
+    display: block;
+    float:left;
+    position: fixed;
+    top: 0em;
+    bottom: 0em;
+    left: 0em;
+    width: 33.3333%;
+    
+}
+
+.content-container {
+    width: 63.66667%;
+    margin-left: 33.3333%;
+    display:inline-block;
+    float: left;
+}
+
+.post {
+    margin-left: 10%;
+    margin-right: 10%;
+}
+
+.post-title {
+    font-size: 2.6em;
+    
+
+}
+
+.post-title a {
+    color: #111;
+
+}
+

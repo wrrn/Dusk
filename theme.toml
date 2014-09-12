@@ -1,0 +1,11 @@
+name = "Dusk"
+license = "MIT"
+source_repo = "https://github.com/warrenharper/dusl
+description = "An elegant open source and mobile first theme"
+tags = ["blog", "personal"]
+features = ["blog", "personal"]
+
+[author]
+    name = "Warren Harper"
+    email = "warrenjharper@gmail.com"
+    url = "https://github.com/warrenharper"
