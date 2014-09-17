@@ -1,6 +1,6 @@
 body {
     font-family: "Georgia",Georgia,Times,serif;
-    line-height: 1.5;
+    /*line-height: 1.5;*/
     text-rendering: optimizelegibility;
 }
 .sidebar {
@@ -39,3 +39,8 @@ body {
 
 }
 
+.sidebar-top {
+    background: #455466;
+    padding: 5% 2em;
+
+}
