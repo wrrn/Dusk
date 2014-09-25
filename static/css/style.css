@@ -44,3 +44,19 @@ body {
     padding: 5% 2em;
 
 }
+
+.sidebar-top .contents {
+    font-family:"Source Sans Pro",sans-serif;
+
+}
+
+.sidebar-top .contents h1 {
+    font-size: 2.5em;
+    margin-bottom: 0;
+}
+
+.tagline {
+    font-weight: bold;
+    margin-top: 0px;
+    font-size: 1.5em;
+}

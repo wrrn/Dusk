@@ -1,6 +1,8 @@
 <div class="sidebar">
   <div class="sidebar-top">
     <div class="contents">
+      <h1>{{ .Site.Author.name }}</h1>
+      {{ with .Site.Params.tagline }}<p class="tagline">{{ . }} </p>{{end}}
     </div>
   </div>
   <div class="sidebar-bottom">
