@@ -1,0 +1,11 @@
+* TODO Organize the package [0/3]
+** TODO Move the CSS to the static folders
+** TODO Move the image to the static folders
+* DONE Figure out how to set the image for the blog
+  CLOSED: [2014-11-27 Thu 12:52]
+ + This is possible we can set a parameter in the front matter which we can access using .Params.image
+   We just need to set this in the front matter.
+ + We can make it a default option in the front matter by defining an archetype for the post.
+
+** DONE Check HUGO documentation about the header of the a post. 
+   CLOSED: [2014-11-27 Thu 12:49]

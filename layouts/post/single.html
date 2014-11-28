@@ -1,35 +1,55 @@
-{{ partial "head.html" . }}
-<div class="content container">
-  <div class="post">
-    <h1>{{ .Title }}</h1>
-    <span class="post-date">{{ .Date.Format "Jan 2, 2006" }} &middot; {{ .ReadingTime }} minute read{{ if .Site.DisqusShortname }} &middot; <a href="{{ .Permalink }}#disqus_thread">Comments</a>{{ end }}</span>
-    {{ .Content }}
-  </div>
-  {{ if .Site.DisqusShortname }}<div id="disqus_thread"></div>{{ end }}
-</div>
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8"/>
+       
+        <link rel="stylesheet" href="../../static/css/post.css"/>
+    </head>
+    <body>
+        <div class="parallax__wrapper">
+            <div class="parallax">
+                <!--  <div class="parallax__group"> -->
+                <div class="parallax__layer parallax__layer--back">
+                    <div class="title">
+                        Parallax Back
+                    </div>
+                </div>
+                <div class="parallax__layer parallax__layer--base">
+                    <div class="title-red">
+                        
+                        Tonx lo-fi actually food truck keytar YOLO beard heirloom. Heirloom selvage street art cornhole. Next level banjo Truffaut, roof party cred gluten-free mixtape lomo Thundercats. Trust fund chillwave 90's Shoreditch vegan, listicle leggings freegan fap Vice. Small batch jean shorts beard banjo fanny pack, Shoreditch hashtag butcher kale chips. Ugh actually mustache VHS, bitters try-hard cred Schlitz blog keffiyeh meditation food truck keytar. Single-origin coffee squid sriracha, ennui lo-fi lomo Williamsburg synth cliche 90's.
 
-{{ with .Site.DisqusShortname }}
-<script type="text/javascript">
-var disqus_shortname = {{ . }};
-(function () {
-    var s = document.createElement('script'); s.async = true;
-    s.type = 'text/javascript';
-    s.src = '//' + disqus_shortname + '.disqus.com/count.js';
-    (document.getElementsByTagName('HEAD')[0] || document.getElementsByTagName('BODY')[0]).appendChild(s);
-}());
-</script>
-{{ end }}
+                        Sartorial kogi crucifix try-hard bespoke flannel. Umami Shoreditch Thundercats drinking vinegar, literally next level DIY kitsch food truck. Migas Shoreditch lo-fi drinking vinegar authentic typewriter, trust fund pug chambray American Apparel hoodie put a bird on it cold-pressed Neutra. Tattooed mumblecore synth Thundercats roof party asymmetrical, literally quinoa cray pop-up vinyl. Thundercats skateboard whatever mlkshk, Echo Park readymade vegan twee. Polaroid tattooed selvage, Intelligentsia church-key keytar Austin food truck stumptown. Direct trade gentrify pug cliche, tattooed tote bag try-hard Odd Future pickled trust fund polaroid migas health goth.
 
-{{ with .Site.DisqusShortname }}
-<script type="text/javascript">
-    var disqus_shortname = {{ . }};
-    (function() {
-        var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
-        dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
-        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
-    })();
-</script>
-<noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
-<a href="http://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
-{{ end }}
-{{ partial "foot.html" . }}
+                        Slow-carb gentrify semiotics Pinterest. Portland fanny pack tilde 90's, roof party +1 pickled meh meditation put a bird on it asymmetrical chillwave jean shorts gentrify YOLO. Organic beard food truck Blue Bottle, skateboard cray Odd Future semiotics Brooklyn fanny pack messenger bag jean shorts roof party. Messenger bag seitan High Life Intelligentsia, Austin cliche selfies Truffaut selvage slow-carb. Hoodie bespoke letterpress dreamcatcher. Lumbersexual Pinterest swag occupy 3 wolf moon paleo. Echo Park semiotics shabby chic tattooed, taxidermy next level ugh scenester XOXO health goth Blue Bottle ennui mlkshk.
+
+                        Direct trade Tumblr church-key, fingerstache photo booth paleo listicle health goth fashion axe Tonx umami literally. Roof party Schlitz next level, migas sartorial Carles actually. Art party swag forage, pork belly farm-to-table 8-bit Brooklyn whatever meditation freegan. Post-ironic sustainable seitan, before they sold out chia Neutra Echo Park Etsy tote bag mustache. Salvia mlkshk plaid blog selvage Echo Park, hashtag wayfarers Wes Anderson photo booth disrupt Vice. Keytar seitan trust fund, Intelligentsia meh yr normcore biodiesel distillery pug Odd Future +1 PBR keffiyeh. Hella 90's locavore VHS seitan roof party.
+
+                        Parallax Scrolling without javascript
+
+                        Yesterday I was wondering if it would be possible to create a parallax header, like the one used on Medium, using only CSS. I figured it should be possible using 3d transforms. Turns out Scott Kellum has already made a demo on CodePen using just that.
+
+                        I wanted to see it work on something else than images of kittens, so I made this little demo.
+
+                        Unfortunately this doesn't work well in Chrome on Retina screens (which is an issue that's being tracked) so use this with caution. Of course this won't work in older browsers, but you can pretty safely use it as an enhancement.
+
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. 
+                        
+                    </div>
+                </div>
+                <!--   </div> -->
+                <!--  <div class="parallax__group">
+                <div class="parallax__layer parallax__layer--back">
+                <div class="title"></div>
+                </div>
+                </div -->
+
+            </div>
+        </div>
+        
+        
+        
+    </body>
+</html>
