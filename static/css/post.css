@@ -57,7 +57,7 @@ body {
 .parallax__layer--base {
     padding: 20px 10%;
     position: relative;
-    top: 40%;
+    top: 46%;
     background-color: #FFF;
 
     
@@ -65,11 +65,11 @@ body {
 
 .parallax__layer--back {
     position: absolute;
-    top: -26%;
+    top: -28%;
     left: 0px;
     width: 100%;
     height: 40%;
-    padding-top: 20%;
+    padding-top: 10%;
     background: url('../images/tree.jpg') no-repeat scroll 50% 50% / cover transparent;
     transform: translateZ(-1px) scale(2);
     
