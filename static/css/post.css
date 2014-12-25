@@ -37,8 +37,8 @@ body {
 }
 
 .parallax * {
-    perspective: 1px
-                     transform-style: preserve-3d;
+    perspective: 1px;
+    transform-style: preserve-3d;
 
 }
 
