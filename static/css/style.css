@@ -13,6 +13,7 @@ body {
     bottom: 0em;
     left: 0em;
     width: 33.3333%;
+    z-index: 100;
     
 }
 
@@ -42,6 +43,7 @@ body {
 .sidebar-top {
     background: #455466;
     padding: 5% 2em;
+    min-height:56%;
 
 }
 

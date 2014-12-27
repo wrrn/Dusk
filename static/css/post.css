@@ -33,6 +33,7 @@ body {
     overflow-x: hidden;
     overflow-y: auto;
     transform-style: preserve-3d;
+    margin-left: 33%;
     
 }
 
@@ -57,7 +58,7 @@ body {
 .parallax__layer--base {
     padding: 20px 10%;
     position: relative;
-    top: 46%;
+    top: 56%;
     background-color: #FFF;
 
     
