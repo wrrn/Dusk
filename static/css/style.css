@@ -42,12 +42,12 @@ body {
 
 .sidebar-top {
     background: #455466;
-    padding: 5% 2em;
-    min-height:56%;
+    height:50%;
 
 }
 
 .sidebar-top .contents {
+    padding: 5% 2em;
     font-family:"Source Sans Pro",sans-serif;
 
 }
