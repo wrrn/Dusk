@@ -19,7 +19,7 @@ body {
 
 .content-container {
     width: 63.66667%;
-    margin-left: 33.3333%;
+    margin-left: 25%;
     display:inline-block;
     float: left;
 }
@@ -48,7 +48,7 @@ body {
 
 .sidebar-top .contents {
     padding: 5% 2em;
-    font-family:"Source Sans Pro",sans-serif;
+    font-family:"Montserrat",sans-serif;
 
 }
 

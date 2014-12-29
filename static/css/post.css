@@ -8,17 +8,16 @@ body {
     padding:0;
     text-align: center;
 }
+/* @font-face { */
+/*     font-family: "Montserrat"; */
+/*     src: url('Montserrat-Regular.otf'); */
 
-@font-face {
-    font-family: "Montserrat";
-    src: url('Montserrat-Regular.otf');
+/* } */
+/* @font-face { */
+/*     font-family: "Crimson"; */
+/*     src: url('CrimsonText-Regular.ttf'); */
 
-}
-@font-face {
-    font-family: "Crimson";
-    src: url('CrimsonText-Regular.ttf');
-
-}
+/* } */
 /*          .paralax__wrapper {
             bottom: 0;
             left: 0;
@@ -87,26 +86,31 @@ body {
     padding-top: 10%;
     text-align:center;
     color: white;
-    font-family: "Montserrat",Helvetica,Arial,sans-serif;
+    font-family: 'Montserrat',Helvetica,Arial,sans-serif;
     font-size: 60px;
     
 }
 
 .posted-date {
-    padding-top: 11%;
+    position: absolute;
+    left:0;
+    bottom: 0;
+    padding-left: 2%;
+    padding-bottom: 1%;
     color: white;
     font-style: italic;
     float: left;
-    padding-left: 2%;
-    font-size: 20px;
+
+    font-size: 24px;
+    font-family: 'Crimson Text', Georgia,serif;
 }
 
 
 
 .title-red {
-    text-align: left;
-    font-family: "Crimson",Georgia,serif;
-    font-size: 20px;
+    text-align: justify;
+    font-family: 'Crimson Text', Georgia,serif;
+    font-size: 24px;
     line-height: 1.3em;
     
     
