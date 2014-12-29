@@ -33,7 +33,7 @@ body {
     overflow-x: hidden;
     overflow-y: auto;
     transform-style: preserve-3d;
-    margin-left: 32.9795%;
+    margin-left: 24.7%;
     
 }
 
@@ -84,20 +84,28 @@ body {
 
             } */
 .title {
-    padding-top: 2%;
+    padding-top: 10%;
     text-align:center;
     color: white;
-    height: 100%;
-    font-family: Montserrat,Helvetica,Arial,sans-serif;
+    font-family: "Montserrat",Helvetica,Arial,sans-serif;
     font-size: 60px;
     
+}
+
+.posted-date {
+    padding-top: 11%;
+    color: white;
+    font-style: italic;
+    float: left;
+    padding-left: 2%;
+    font-size: 20px;
 }
 
 
 
 .title-red {
     text-align: left;
-    font-family: Crimson,Georgia,serif;
+    font-family: "Crimson",Georgia,serif;
     font-size: 20px;
     line-height: 1.3em;
     
