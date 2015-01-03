@@ -125,11 +125,8 @@ ul, ol {
 }
 
 .post-contents pre {
-    background: #EAEAEA;
-    font-family: Arial;
     font-size: .6em;
     line-height: 1.2em;
-    padding: 20px;
     margin-bottom: 5px;
 }
 
