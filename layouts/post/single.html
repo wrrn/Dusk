@@ -1,11 +1,9 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <meta charset="utf-8"/>
-        <link href='http://fonts.googleapis.com/css?family=Crimson+Text:400,700,400italic|Montserrat:400,700' rel='stylesheet' type='text/css'>
-         <link rel="stylesheet" href="/css/post.css"/>
-        <link rel="stylesheet" href="/css/style.css"/>
-       
+        {{ partial "head.html" . }}
+        
+        <link rel="stylesheet" href="/css/post.css"/>
     </head>
     <body>
         {{ partial "sidebar.html" . }}
@@ -22,11 +20,10 @@
                     <div class="post-contents">
                         {{ .Content }}
                     </div>
+                    {{ partial "disqus.html" . }}
                 </div>
             </div>
-       
-        
-        
-        
+            
+            
     </body>
 </html>

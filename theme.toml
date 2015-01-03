@@ -1,6 +1,6 @@
 name = "Dusk"
 license = "MIT"
-source_repo = "https://github.com/warrenharper/dusl
+source_repo = "https://github.com/warrenharper/dusk"
 description = "An elegant open source and mobile first theme"
 tags = ["blog", "personal"]
 features = ["blog", "personal"]

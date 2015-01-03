@@ -107,6 +107,7 @@ body {
 
 ul, ol {
     padding-left:1em;
+    color: #333;
 }
 
 .post-contents li > p {
