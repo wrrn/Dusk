@@ -1,7 +1,8 @@
-* TODO Organize the package [0/3]
-** TODO Move the CSS to the static folders
-** TODO Move the image to the static folders
-* TODO Add JS for the opacity of the menu bar so that opacity is 100% once it gets to the blog text
+* DONE Organize the package [2/2]
+  CLOSED: [2015-01-03 Sat 12:07]
+** DONE Move the CSS to the static folders
+** DONE Move the image to the static folders
+   CLOSED: [2015-01-03 Sat 12:07]
 * DONE Figure out how to set the image for the blog
   CLOSED: [2014-11-27 Thu 12:52]
  + This is possible we can set a parameter in the front matter which we can access using .Params.image
@@ -10,3 +11,18 @@
 
 ** DONE Check HUGO documentation about the header of the a post. 
    CLOSED: [2014-11-27 Thu 12:49]
+* IN PROGRESS Make Post Hugo-esque [4/5]
+** DONE Grab the image from the Archetype
+   CLOSED: [2015-01-03 Sat 14:15]
+   Can grab this by grabbing .Params.MastheadImage
+** DONE Grab the Posted Date from ``HUGO``
+   CLOSED: [2015-01-03 Sat 14:15]
+   Can grab this by grabbing .PublishDate
+** DONE Grab the text from the post
+   CLOSED: [2015-01-03 Sat 14:15]
+   .Content
+** DONE Grab the title for the post
+   CLOSED: [2015-01-03 Sat 14:15]
+   .Title
+** TODO Create a post that has all the markup and add css to each of the markup
+* TODO Create the home page

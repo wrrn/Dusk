@@ -8,24 +8,7 @@ body {
     padding:0;
     text-align: center;
 }
-/* @font-face { */
-/*     font-family: "Montserrat"; */
-/*     src: url('Montserrat-Regular.otf'); */
 
-/* } */
-/* @font-face { */
-/*     font-family: "Crimson"; */
-/*     src: url('CrimsonText-Regular.ttf'); */
-
-/* } */
-/*          .paralax__wrapper {
-            bottom: 0;
-            left: 0;
-            overflow: hidden;
-            position: fixed;
-            right: 0;
-            top: 0;
-            } */
 .parallax {
     perspective: 1px;
     height: 100vh;
@@ -41,20 +24,6 @@ body {
     transform-style: preserve-3d;
 
 }
-
-/*         .parallax__layer {
-            position: absolute;
-            top:0;
-            right: 0;
-            bottom: 0;
-            left: 0;
-            
-
-            padding: 100vh 0; 
-            
-            } */
-
-
 .masthead {
     position: absolute;
     top: -100%;
@@ -63,19 +32,11 @@ body {
     height: 50%;
 
     background: no-repeat scroll 50% 50% /cover transparent;
-    background-imgage: url('/images/tree.jpg');
+    /* background-image: url('/images/tree.jpg');*/
     transform: translateZ(-4px) scale(5);
     z-index: -900;
-    
-    
 }
 
-/*          .parallax__group {
-            position: relative;
-            height: 100vh;
-            transform-style: preserve-3d;
-
-            } */
 .title {
     padding-top: 10%;
     text-align:center;
@@ -113,3 +74,73 @@ body {
     font-size: 24px;
     line-height: 1.3em;
 }
+
+.post-contents p {
+    padding-bottom: 1em;
+    color:#333;
+}
+
+.post-contents h1 {
+    padding-bottom:.3em;
+    padding-top:1em;
+    color:#1B1B1B;
+    
+}
+
+.post-contents h2 {
+    padding-top:.5em;
+    padding-bottom:.2em;
+    color:#444;
+}
+
+.post-contents h3 {
+    color: #777;
+}
+
+.post-contents h4 {
+    color: #999;
+}
+
+.post-contents h5, h6 {
+    color: #AFAFAF;
+}
+
+ul, ol {
+    padding-left:1em;
+}
+
+.post-contents li > p {
+    padding-bottom: 0;
+}
+
+.post-contents a {
+    color: inherit;
+
+}
+
+.post-contents img {
+    display: block;
+    margin: 0 auto
+}
+
+.post-contents pre {
+    background: #EAEAEA;
+    font-family: Arial;
+    font-size: .6em;
+    line-height: 1.2em;
+    padding: 20px;
+    margin-bottom: 5px;
+}
+
+.post-contents blockquote {
+    font-size: 1.3em;
+    margin-left: -6%;
+    margin-right: -6px;
+}
+
+.post-contents iframe[src*='youtube.com'] {
+  display:block;
+  margin: 0 auto;
+}
+
+
