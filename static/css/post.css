@@ -54,24 +54,18 @@ body {
             
             } */
 
-.parallax__layer--base {
-    padding: 20px 10%;
-    position: relative;
-    top: 50%;
-    background-color: #FFF;
 
-    
-}
-
-.parallax__layer--back {
+.masthead {
     position: absolute;
     top: -100%;
     left: 0px;
     width: 100%;
     height: 50%;
 
-    background: url('../images/tree.jpg') no-repeat scroll 50% 50% / cover transparent;
+    background: no-repeat scroll 50% 50% /cover transparent;
+    background-imgage: url('/images/tree.jpg');
     transform: translateZ(-4px) scale(5);
+    z-index: -900;
     
     
 }
@@ -105,13 +99,17 @@ body {
     font-family: 'Crimson Text', Georgia,serif;
 }
 
+.post {
+    padding: 20px 10%;
+    position: relative;
+    top: 50%;
+    background-color: #FFF;    
+}
 
 
-.title-red {
+.post-contents {
     text-align: justify;
     font-family: 'Crimson Text', Georgia,serif;
     font-size: 24px;
     line-height: 1.3em;
-    
-    
 }
