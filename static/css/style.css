@@ -29,6 +29,7 @@ body {
     margin-right: 5%;
     font-family: "Crimson Text", Georgia, serif;
     color: #333;
+    margin-bottom: 70px;
     
 }
 .post-title {
@@ -43,6 +44,12 @@ body {
     margin-top: 8px;
     font-style:italic;
     color: #777
+}
+
+.post-masthead {
+    display: block;
+    width: 112.5%;
+    margin: -1% -6%;
 }
 
 .reading-time {
