@@ -22,7 +22,7 @@
                         </div>
                         <span class="post-date">Posted on {{ .Date.Format "Jan 2, 2006" }} &middot; <span class="reading-time">{{ .ReadingTime }} minute read{{ if .Site.DisqusShortname }} &middot; <a href="{{ .Permalink }}#disqus_thread">Comments</a>{{ end }}</span>
                         <p>{{ .Description }}</p>
-                        <a href="{{ .Permalink }}">Read On &rarr;</a>
+                        <a class="post-link" href="{{ .Permalink }}">Read On &rarr;</a>
                     </div>
                 {{ end }}
             </div>
