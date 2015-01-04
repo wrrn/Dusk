@@ -38,4 +38,5 @@
 ** DONE Add Posted on the bottom
    CLOSED: [2015-01-04 Sun 13:27]
 * TODO Create the mobile version
-* TODO Fix Disqus Short Name
+* DONE Fix Disqus Short Name
+  CLOSED: [2015-01-04 Sun 17:18]
