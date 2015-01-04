@@ -136,9 +136,11 @@ body {
 .copyright-info {
     font-size: 10px;
     position: absolute;
-    bottom: 0;
-    left: 25%;
+    bottom: 19px;
+    text-align: center;
+    margin: 0px auto;
+    width: 100%;
 
-                  
+    
 
 }
