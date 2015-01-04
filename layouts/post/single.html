@@ -7,23 +7,26 @@
     </head>
     <body>
         {{ partial "sidebar.html" . }}
-            <div class="parallax">
-                <div class="masthead" {{ if ne .Params.mastheadimage "" }}style="background-image: url('{{ .Site.BaseUrl }}{{ .Params.mastheadimage }}');" {{ end }}>
-                    <div class="title">
-                      {{ .Title }}
-                    </div>
-                    <div class="posted-date">
-                        Posted {{ .Date.Format "Jan. 02, 2006" }}
-                    </div>
-                </div>
-                <div id="content" class="post">
-                    <div class="post-contents">
-                        {{ .Content }}
-                    </div>
-                    {{ partial "disqus.html" . }}
-                </div>
+        <div class="parallax">
+            {{ if isset .Params "mastheadimage" }}
+                <div class="masthead"  style="background-image: url('{{ .Site.BaseUrl }}{{ .Params.mastheadimage }}');">
+            {{ else }}
+                    <div class="masthead darktext">
+            {{ end }}
+            <div class="title">
+                {{ .Title }}
             </div>
-            {{ partial "foot.html" . }}
-            
+            <div class="posted-date">
+                Posted {{ .Date.Format "Jan. 02, 2006" }}
+            </div>
+                    </div>
+                    <div id="content" class="post">
+                        <div class="post-contents">
+                            {{ .Content }}
+                        </div>
+                        {{ partial "disqus.html" . }}
+                    </div>
+                </div>
+                {{ partial "foot.html" . }}
     </body>
 </html>

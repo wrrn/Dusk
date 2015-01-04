@@ -49,6 +49,9 @@ body {
 .sidebar-top .contents {
     padding: 5% 2em;
     font-family:"Montserrat",sans-serif;
+    position:relative;
+    text-align: left;
+    height:100%;
 
 }
 
@@ -57,8 +60,67 @@ body {
     margin-bottom: 0;
 }
 
+.social {
+    padding: 0;
+    position:absolute;
+    bottom:37px;
+    right:0;
+    
+}
+
+.social-item {
+    list-style-type: none;
+    color: inherit;
+    font-size: 2em;
+    display:inline-block;
+
+}
+
+.social-item > a {
+    color: #FAFAF9;    
+    text-decoration: none;
+
+}
+
+
+.sidebar-bottom {
+    position:relative;
+    height: 50%;
+}
+
 .tagline {
     font-weight: bold;
     margin-top: 0px;
     font-size: 1.5em;
+}
+
+.menus {
+    padding: 12% 2.7em;
+
+}
+
+.menu-item {
+    list-style-type: none;
+    display:block;
+    font-family: "Montserrat", sans-serif;
+    color: inherit;
+    font-size: 2em;
+    clear: left;
+}
+
+.menu-item > a {
+    color: #FAFAF9;    
+    text-decoration: none;
+    float:left;
+
+}
+
+.copyright-info {
+    font-size: 10px;
+    position: absolute;
+    bottom: 0;
+    left: 25%;
+
+                  
+
 }

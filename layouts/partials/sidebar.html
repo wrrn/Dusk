@@ -2,10 +2,36 @@
   <div class="sidebar-top">
     <div class="contents">
       <h1>{{ .Site.Author.name }}</h1>
-      {{ with .Site.Params.tagline }}<p class="tagline">{{ . }} </p>{{end}}
+      {{ with .Site.Params.tagline }}<p class="tagline">{{ . }}</p>{{end}}
+      <ul class="social">
+          {{ with .Site.Params.github }}
+              <li class="social-item"><a href="{{ . }}"><span class="icon-github"></span></a></li>
+          {{ end }}
+          {{ with .Site.Params.linkedin }}
+              <li class="social-item"><a href="{{ . }}"><span class="icon-linkedin"></span></a></li>
+          {{ end }}
+          {{ with .Site.Params.googleplus }}
+              <li class="social-item"><a href="{{ . }}"><span class="icon-gplus"></span></a></li>
+          {{ end }}
+          {{ with .Site.Params.facebook }}
+              <li class="social-item"><a href="{{ . }}"><span class="icon-facebook"></span></a></li>
+          {{ end }}
+          {{ with .Site.Params.twitter }}
+              <li class="social-item"><a href="{{ . }}"><span class="icon-twitter"></span></a></li>
+          {{ end }}
+        
+      </ul>
     </div>
   </div>
   <div class="sidebar-bottom">
+      <ul class="menus">
+          <li class="menu-item"><a href="{{ .Site.BaseUrl }}/">Blog</a></li>
+          {{ range .Site.Menus.main }}
+              <li class="menu-item"><a href="{{ .Url }}">{{ .Name }}</a></li>
+          {{ end }}
+      </ul>
+      <p class="copyright-info">Copyright &copy; {{ .Now.Format "2006" }} <a href="{{ .Site.BaseUrl }}/license">License</a><br/>
+            Powered by <a href="http://hugo.spf13.com">Hugo</a>
   </div>
   
 </div>

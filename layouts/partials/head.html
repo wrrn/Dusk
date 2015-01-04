@@ -8,12 +8,13 @@
 
 <!-- Fonts -->
 <link href='http://fonts.googleapis.com/css?family=Crimson+Text:400,700,400italic|Montserrat:400,700' rel='stylesheet' type='text/css'>
+<link rel="stylesheet" type="text/css" href="{{ .Site.BaseUrl }}/duskfont/css/dusk.css">
 
 
 <!-- CSS -->
 <link rel="stylesheet" href="{{ .Site.BaseUrl }}/css/style.css">
 
-{{ if isset .Site.Params "highlight" }}<link rel="stylesheet" href="{{ .Site.BaseUrl }}/css/highlight/{{ .Site.Params.highlight }}.css">{{ end }}
+{{ if isset .Site.Params "highlight" }}<link rel="stylesheet" href="{{ .Site.BaseUrl }}/css/highlight/{{ .Site.Params.highlight }}">{{ end }}
 
 <!-- Icons -->
 <link rel="apple-touch-icon-precomposed" sizes="144x144" href="/apple-touch-icon-144-precomposed.png">
