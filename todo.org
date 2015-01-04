@@ -11,7 +11,7 @@
 
 ** DONE Check HUGO documentation about the header of the a post. 
    CLOSED: [2014-11-27 Thu 12:49]
-* IN PROGRESS Make Post Hugo-esque [4/5]
+* IN PROGRESS Make Post Hugo-esque [5/5]
 ** DONE Grab the image from the Archetype
    CLOSED: [2015-01-03 Sat 14:15]
    Can grab this by grabbing .Params.MastheadImage
@@ -24,5 +24,15 @@
 ** DONE Grab the title for the post
    CLOSED: [2015-01-03 Sat 14:15]
    .Title
-** TODO Create a post that has all the markup and add css to each of the markup
+** DONE Create a post that has all the markup and add css to each of the markup
+   CLOSED: [2015-01-04 Sun 11:53]
 * TODO Create the home page
+** DONE Add Summary
+   CLOSED: [2015-01-04 Sun 13:26]
+** IN PROGRESS Add Image support
+** DONE Add Read time to the bottom
+   CLOSED: [2015-01-04 Sun 13:27]
+** DONE Add Posted on the bottom
+   CLOSED: [2015-01-04 Sun 13:27]
+* TODO Create the mobile version
+* TODO Fix Disqus Short Name

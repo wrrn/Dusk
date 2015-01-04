@@ -18,27 +18,38 @@ body {
 }
 
 .content-container {
-    width: 63.66667%;
+    width: 75%%;
     margin-left: 25%;
     display:inline-block;
     float: left;
 }
 
 .post-listing {
-    margin-left: 10%;
-    margin-right: 10%;
-}
-
-.post-title {
-    font-size: 2.6em;
+    margin-left: 5%;
+    margin-right: 5%;
+    font-family: "Crimson Text", Georgia, serif;
+    color: #333;
     
+}
+.post-title {
+    font-size: 1.5em;
+    color: #333;
+    text-decoration: none;
+    font-family: "Montserrat",sans-serif;
+}
+
+.post-date {
+    display:inline-block;
+    margin-top: 8px;
+    font-style:italic;
+    color: #777
+}
+
+.reading-time {
+    font-style: normal;
 
 }
 
-.post-title a {
-    color: #111;
-
-}
 
 .sidebar-top {
     background: #455466;
@@ -56,7 +67,7 @@ body {
 }
 
 .sidebar-top .contents h1 {
-    font-size: 2.5em;
+    font-size: 3em;
     margin-bottom: 0;
 }
 

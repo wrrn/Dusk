@@ -1,28 +1,41 @@
-{{ partial "head.html" . }}
-<div class="content-container">
-  <div class="posts">
-    {{ range where .Data.Pages "Section" "post"}}
-    <div class="post">
-      <h1 class="post-title">
-        <a href="{{ .Permalink }}">{{ .Title }}</a>
-      </h1>
-      <span class="post-date">{{ .Date.Format "Jan 2, 2006" }} &middot; {{ .ReadingTime }} minute read{{ if .Site.DisqusShortname }} &middot; <a href="{{ .Permalink }}#disqus_thread">Comments</a>{{ end }}</span>
-      <p>{{ .Description }}</p>
-      <a href="{{ .Permalink }}">Read On &rarr;</a>
-    </div>
+<!DOCTYPE html>
+<html>
+    <head>
+        {{ partial "head.html" . }}
+        <link rel="stylesheet" href="index.css">
+    </head>
+    <body>
+        {{ partial "sidebar.html" . }}
+        
+        <div class="content-container">
+            <div class="posts">
+                {{ range where .Data.Pages "Section" "post"}}
+                    <div class="post-listing">
+                        <h1>
+                            <a class="post-title" href="{{ .Permalink }}">{{ .Title }}</a>
+                        </h1>
+                        <div class="post-summary">
+                            {{ .Summary }}..
+                        </div>
+                        <span class="post-date">Posted on {{ .Date.Format "Jan 2, 2006" }} &middot; <span class="reading-time">{{ .ReadingTime }} minute read{{ if .Site.DisqusShortname }} &middot; <a href="{{ .Permalink }}#disqus_thread">Comments</a>{{ end }}</span>
+                        <p>{{ .Description }}</p>
+                        <a href="{{ .Permalink }}">Read On &rarr;</a>
+                    </div>
+                {{ end }}
+            </div>
+        </div>
+    </body>
+    {{ with .Site.DisqusShortname }}
+        <script type="text/javascript">
+         var disqus_shortname = {{ . }};
+         (function () {
+             var s = document.createElement('script'); s.async = true;
+             s.type = 'text/javascript';
+             s.src = '//' + disqus_shortname + '.disqus.com/count.js';
+             (document.getElementsByTagName('HEAD')[0] || document.getElementsByTagName('BODY')[0]).appendChild(s);
+         }());
+        </script>
     {{ end }}
-  </div>
-</div>
+    {{ partial "foot.html" . }}
+</html>
 
-{{ with .Site.DisqusShortname }}
-<script type="text/javascript">
-var disqus_shortname = {{ . }};
-(function () {
-    var s = document.createElement('script'); s.async = true;
-    s.type = 'text/javascript';
-    s.src = '//' + disqus_shortname + '.disqus.com/count.js';
-    (document.getElementsByTagName('HEAD')[0] || document.getElementsByTagName('BODY')[0]).appendChild(s);
-}());
-</script>
-{{ end }}
-{{ partial "foot.html" . }}
