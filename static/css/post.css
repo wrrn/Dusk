@@ -25,17 +25,34 @@ body {
 
 }
 .masthead {
-    position: absolute;
-    top: -100%;
-    left: 0px;
-    width: 100%;
-    height: 50%;
+    /* position: absolute; */
+    /* top: -100%; */
+    /* left: 0px; */
+    /* width: 100%; */
+    /* height: 50%; */
 
-    background: no-repeat scroll 50% 50% /cover transparent;
-    /* background-image: url('/images/tree.jpg');*/
-    transform: translateZ(-4px) scale(5);
-    z-index: -900;
-    color: white;
+    
+    /* /\* background-image: url('/images/tree.jpg');*\/ */
+    /* transform: translateZ(-4px) scale(5); */
+    /* z-index: -900; */
+    /* color: white; */
+    	min-height: 100%;
+        background-size: cover;
+        background-attachment: fixed;
+        background-repeat: no-repeat;
+        background-position: 50% 50%;
+        background-color: transparent;
+        color: white;
+        padding:0;
+        margin: 0;
+        overflow-x: hidden;
+        position:fixed;
+        width:100%;
+        
+                     
+                        
+                   
+        
 }
 
 .darktext {
@@ -43,33 +60,33 @@ body {
 
 }
 
-.title {
-    padding-top: 10%;
-    text-align:center;
+.header-info {
     
     font-family: 'Montserrat',Helvetica,Arial,sans-serif;
     font-size: 60px;
-    
+    line-height: 44vh;
+    margin-left: -25%;
+    position:relative;
 }
+
+
 
 .posted-date {
     position: absolute;
-    left:0;
-    bottom: 0;
-    padding-left: 2%;
-    padding-bottom: 1%;
+    left:21%;
+    bottom: -58%;
     font-style: italic;
     float: left;
-
     font-size: 24px;
     font-family: 'Crimson Text', Georgia,serif;
+    
 }
 
 .post {
     padding: 20px 10%;
     position: relative;
-    top: 50%;
-    background-color: #FFF;    
+    top: 50vh;
+    background-color: #FFF;
 }
 
 

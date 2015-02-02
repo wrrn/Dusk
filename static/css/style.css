@@ -18,10 +18,10 @@ body {
 }
 
 .content-container {
-    width: 75%%;
-    margin-left: 25%;
+    width: 75%;
+
     display:inline-block;
-    float: left;
+    float: right;
 }
 
 .post-listing {
