@@ -40,3 +40,4 @@
 * TODO Create the mobile version
 * DONE Fix Disqus Short Name
   CLOSED: [2015-01-04 Sun 17:18]
+* TODO Remove the sidebar outer class -- allow top-half and bottom-half to be seperate (ie header & footer)
